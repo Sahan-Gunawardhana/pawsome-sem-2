@@ -15,7 +15,7 @@ return new class extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('customer_id');
-            $table->date('order_date')->default(DB::raw('CURRENT_DATE'));
+            $table->date('order_date')->useCurrent();
             $table->decimal('total', 8, 2);
             $table->text('zip_code');
             $table->text('province');

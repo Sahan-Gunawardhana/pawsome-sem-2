@@ -15,13 +15,15 @@ return new class extends Migration
             $table->id();
             $table->string('pro_name')->nullable();
             $table->decimal('pro_price', total:8, places:2);
-            $table->string('pro_keyword')->nullable();
+            $table->string('category');
             $table->string('shelf_life');
             $table->string('pro_description');
+            $table->integer('quantity')->nullable();
             $table->string('pro_width');
             $table->string('pro_height');
             $table->string('pro_length');
             $table->string('pro_image_url')->nullable();
+            
             $table->timestamps();
         });
     }

@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('customer_id');
             $table->string('pet_name');
+            $table->string('pet_type');
             $table->date('drop_off_date');
             $table->date('pick_up_date');
             $table->text('description');

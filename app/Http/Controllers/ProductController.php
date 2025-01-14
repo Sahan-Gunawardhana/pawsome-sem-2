@@ -25,7 +25,7 @@ class ProductController extends Controller
         $validated = $request->validate([
             'pro_name' => 'required|string|max:255',
             'pro_price' => 'required|numeric|min:0',
-            'pro_keyword' => 'required|string|max:255',
+            'category' => 'required|string|max:255',
             'shelf_life' => 'required|integer|min:0',
             'pro_description' => 'required|string',
             'pro_width' => 'required|numeric|min:0',
@@ -55,7 +55,7 @@ class ProductController extends Controller
         $validated = $request->validate([
             'pro_name' => 'required|string|max:255',
             'pro_price' => 'required|numeric|min:0',
-            'pro_keyword' => 'required|string|max:255',
+            'category' => 'required|string|max:255',
             'shelf_life' => 'required|integer|min:0',
             'pro_description' => 'required|string',
             'pro_width' => 'required|numeric|min:0',

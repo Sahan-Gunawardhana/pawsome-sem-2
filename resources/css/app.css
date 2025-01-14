@@ -5,3 +5,66 @@
 [x-cloak] {
     display: none;
 }
+
+
+@layer components{
+    .header{
+        @apply font-sans bg-gray-50
+    }
+
+    .fixed-button{
+       @apply bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition duration-300 w-48;
+    }
+
+    .warning-error{
+        @apply bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg focus:outline-none;
+    }
+
+    .neutral-button{
+        @apply bg-blue-700 text-white py-3 px-6 rounded-lg hover:bg-blue-800 active:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition duration-300 w-full text-center font-semibold;;
+    }
+
+    .home-card{
+        @apply w-full h-64 object-cover rounded-lg shadow-md;
+    }
+    
+    .ft-card{
+        @apply w-full h-80 object-cover rounded-lg shadow-md
+    }
+
+    .main-card{
+        @apply w-full h-72 object-cover rounded-lg shadow-md
+    }
+
+    .link{
+        @apply text-gray-500 hover:text-green-600 transition duration-300
+    } 
+
+    .admin-link{
+        @apply text-gray-700 hover:text-green-600 transition duration-300 text-2xl
+    }    
+
+    .tab{
+        @apply bg-green-400 text-center font-semibold rounded-lg
+    }
+
+    .act-tab{
+        @apply bg-teal-200 text-center font-semibold rounded-lg;
+    }
+
+    .store-card-buttons{
+        @apply bg-teal-200 text-teal-800 p-2 rounded-full
+    }
+    
+    .admin-main{
+        @apply container mx-auto bg-white p-8 rounded-lg shadow-md
+    }
+
+    .admin-table{
+        @apply min-w-full bg-white border border-gray-300 rounded-lg shadow-md
+    }
+
+    .admin-table-header{
+        @apply text-xs uppercase bg-gray-200 text-gray-700
+    }
+}

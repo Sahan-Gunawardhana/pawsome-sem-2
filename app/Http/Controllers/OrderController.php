@@ -13,7 +13,7 @@ class OrderController extends Controller
      */
     public function index()
     {
-        $orders = Order::with(['orderItems', 'customer'])->paginate(10);
+        $orders = Order::with(['orderItems.product', 'customer'])->paginate(10);
         return OrderResource::collection($orders);
     }
 

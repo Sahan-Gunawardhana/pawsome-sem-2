@@ -20,7 +20,7 @@ class UsersTableSeeder extends Seeder
                 'email' => 'johndoe@mail.com',
                 'password' => Hash::make('password'),
                 'user_type' => 'admin',
-                'created_at' => now(),
+                'created_at' => '2024-01-01 00:00:00',
                 'updated_at' => now(),
             ],
             [
@@ -28,7 +28,7 @@ class UsersTableSeeder extends Seeder
                 'email' => 'janesmith@mail.com',
                 'password' => Hash::make('password'),
                 'user_type' => 'user',
-                'created_at' => now(),
+                'created_at' => '2024-11-01 00:00:00',
                 'updated_at' => now(),
             ],
             [
@@ -36,7 +36,23 @@ class UsersTableSeeder extends Seeder
                 'email' => 'alicejohnson@mail.com',
                 'password' => Hash::make('password'),
                 'user_type' => 'user',
-                'created_at' => now(),
+                'created_at' => '2024-08-01 00:00:00',
+                'updated_at' => now(),
+            ],
+            [
+                'name' => 'Alice Johnson II',
+                'email' => 'alicejohnsonII@mail.com',
+                'password' => Hash::make('password'),
+                'user_type' => 'user',
+                'created_at' => '2024-08-01 00:00:00',
+                'updated_at' => now(),
+            ],
+            [
+                'name' => 'Alice Johnson III',
+                'email' => 'alicejohnsonIII@mail.com',
+                'password' => Hash::make('password'),
+                'user_type' => 'user',
+                'created_at' => '2024-09-03 00:00:00',
                 'updated_at' => now(),
             ],
         ]);

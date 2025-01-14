@@ -14,6 +14,7 @@ class Appointment extends Model
 
         'customer_id',
         'pet_name',
+        'pet_type',
         'drop_off_date',
         'pick_up_date',
         'description',

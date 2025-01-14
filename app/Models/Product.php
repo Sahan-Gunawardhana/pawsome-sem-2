@@ -13,12 +13,13 @@ class Product extends Model
     protected $fillable = [
         'pro_name',
         'pro_price',
-        'pro_keyword',
+        'category',
         'shelf_life',
         'pro_description',
         'pro_width',
         'pro_height',
         'pro_length',
+        'quantity',
         'pro_image_url'
     ];
     //declares a relation

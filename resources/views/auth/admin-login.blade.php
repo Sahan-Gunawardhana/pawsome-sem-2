@@ -12,7 +12,7 @@
             </div>
         @endsession
 
-        <form method="POST" action="{{ route('login') }}">
+        <form method="POST" action="{{ route('admin.login') }}">
             @csrf
 
             <div>
@@ -51,7 +51,7 @@
 
                 axios.post('api/login',{
                     email: email,
-                    user_type: 'user',
+                    user_type: 'admin',
                     password: password
                 })
                 .then(response => {
@@ -59,7 +59,6 @@
                 })
                 .catch(error => {
                     console.error('login failed', error);
-                    alert('Invalid login creds');
                 })
             })
         </script>
